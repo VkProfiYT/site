@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-weight: 700;
+    margin: 0px;
+    background-image: url("../img/back.png");
+    background-size: 100% 100%;
+}
+header{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgb(0, 0, 0, 0.02));
+    position: fixed;
+    width: 100%;
+}
+footer{
+    background: linear-gradient(rgba(0, 0, 0, 0.02), rgb(0, 0, 0, 0.8));
+}
+
+.легкий_отступ_вниз{
+    height: 80%;
+}
+.централизация {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.логотип{
+    float: left;
+    padding-top: 1%;
+    padding-left: 1%;
+    width: 40px;
+}
+.черёдный_распорядок{
+    display: inline-table;
+    padding-right: 1.25%;
+    padding-left: 1.25%;
+}
+.категорий{
+    color: #707070;
+    font-size: 30px;
+    cursor: pointer;
+    padding-top: 1%;
+}
+.анимация_выбора {
+    transition: 100ms width, 100ms background-color;
+    height: 3px;
+    border-radius: 100px;
+    width: 0%;
+    background-color: #fff;
+    transition: 300ms width;
+}
+.категорий:hover .анимация_выбора {
+    width: 100%;
+    background-color: #fff;
+}
+.категорий:hover{
+    color: #fff;
+    transition: 300ms color;
+}
+.контакты{
+    width: 80%;
+    bottom:0px;
+    margin-left: 12.5%;
+    height: 100px;
+}
+.support{
+    background-image: url("../img/support_un.png");
+    background-size: 100% 100%;
+    width: 50px; height: 50px;
+    transition: 300ms background-image, 300ms width, 300ms height;
+}
+.support:hover{
+    background-image: url("../img/support.png");
+    width: 75px; height: 75px;
+}
+.tiktok{
+    background-image: url("../img/tiktok_un.png");
+    background-size: 100% 100%;
+    width: 50px; height: 50px;
+    transition: 300ms background-image, 300ms width, 300ms height;
+}
+.tiktok:hover{
+    background-image: url("../img/tiktok.png");
+    width: 75px; height: 75px;
+}
+.ds{
+    background-image: url("../img/ds_un.png");
+    background-size: 100% 100%;
+    width: 50px; height: 50px;
+    transition: 300ms background-image, 300ms width, 300ms height;
+}
+.ds:hover{
+    background-image: url("../img/ds.png");
+    width: 75px; height: 75px;
+}
+.yt{
+    background-image: url("../img/yt_un.png");
+    background-size: 100% 100%;
+    width: 50px; height: 50px;
+    transition: 300ms background-image, 300ms width, 300ms height;
+}
+.yt:hover{
+    background-image: url("../img/yt.png");
+    width: 75px; height: 75px;
+}
+.vk{
+    background-image: url("../img/vk_un.png");
+    background-size: 100% 100%;
+    width: 50px; height: 50px;
+    transition: 300ms background-image, 300ms width, 300ms height;
+}
+.vk:hover{
+    background-image: url("../img/vk.png");
+    width: 75px; height: 75px;
+}
+.tg{
+    background-image: url("../img/tg_un.png");
+    background-size: 100% 100%;
+    width: 50px; height: 50px;
+    transition: 300ms background-image, 300ms width, 300ms height;
+}
+.tg:hover{
+    background-image: url("../img/tg.png");
+    width: 75px; height: 75px;
+}
+
+/*Стиль для ползунка*/
+::-webkit-scrollbar {
+    width: 1px;
+}
+::-webkit-scrollbar-track {
+    background: rgb(56, 40, 42);
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(31, 21, 23);
+    height: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(43, 30, 32);
+}

@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<center>
+    <div class="разделяющая_линия_70"></div>
+    <div class="список">
+        <div class="контент">
+            <div class="стримы">
+                <div class="много_смотрят"></div>
+                <div class="остальные_стримы"></div>
+            </div>
+            <div class="видео">
+                    {% for video in videos %}
+                        <a href={{ video.urlContent }}>
+                            <div class="сортировка_в_ряд отступ">
+                                <div class="видеоплеер">
+                                    <div class="затемнение_превьюшка">
+                
+                                    </div>
+                                    <img class="превьюшка" src= height="175px">
+                                    <div class="централизация">
+                                        <div class="затемнение_аватарка">
+                
+                                        </div>
+                                        <img class="аватарка сортировка_в_ряд" src=${avatar} height="40px">
+                                        <div class="название сортировка_в_ряд">${name}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="разделяющая_линия_70"></div>
+</center>
+<script>
+    function analisyc(preview,avatar,name,url){ /*x = превьюшка, y = аватарка, z = название, w = ссылка на видео*/
+        video.innerHTML += `
+        <a href=${url}>
+            <div class="сортировка_в_ряд отступ">
+                <div class="видеоплеер">
+                    <div class="затемнение_превьюшка">
+
+                    </div>
+                    <img class="превьюшка" src=${preview} height="175px">
+                    <div class="централизация">
+                        <div class="затемнение_аватарка">
+
+                        </div>
+                        <img class="аватарка сортировка_в_ряд" src=${avatar} height="40px">
+                        <div class="название сортировка_в_ряд">${name}</div>
+                    </div>
+                </div>
+            </div>
+        </a>`;
+
+    }
+</script>
+{% endblock %}
