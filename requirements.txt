@@ -1,2 +1,4 @@
+django_rename_app
+django-admin
 Django==5.0.4
-request==2.31.0
+requests==2.31.0
